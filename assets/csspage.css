@@ -52,6 +52,12 @@ color: #252B42;
 	margin-left:115px;
 	padding-top: 30px;
 }
+@media(max-width:700px){
+	.container{
+	margin-left:0px;
+	padding-top: 30px;
+}
+}
 .header{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr );

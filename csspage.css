@@ -1,0 +1,151 @@
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	background-color:black;
+	font-family: sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+li{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.heading{
+	color: white;
+}
+.container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.header-container{
+	max-width: 90%;
+}
+
+.header{
+	min-width: 100%;
+	height: 500px;
+	background-color:white;
+	background: url(img/bgc.png);
+}
+
+@media(max-width: 600px){
+	.header-nav{
+		display: none;
+	}
+}
+.list-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+	list-style-type: none;
+
+}
+.header-link{
+	font-size: 18px;
+}
+.heading-header{
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	width: 50%;
+	font-size: 60px;
+}
+@media(max-width: 600px){
+	.heading-header{
+		font-size:30px;
+	}
+}
+.main{
+	max-width: 100%;
+	height: 50%;
+	background-color:#252525;
+}
+
+.section{
+	max-width: 100%;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+.blockquote{
+	max-width: 100%;
+
+}
+.blockquote__inner{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	justify-items: center;
+}
+.double-comma{
+	height: 60px;
+	background-color:;
+}
+.blockquote_text{
+	text-align: center;
+	background-color:;
+	color: white;
+	max-width: 80%;
+}
+
+.services__inner{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+}
+.heading-our-works{
+	text-align: center;
+	color: white;
+}
+.our-works-photo{
+	width:100%;
+	background-color: cyan;
+
+}
+.our-works-img{
+	width: 100%;
+}
+.img-services{
+	max-width:100%;
+}
+.partners__inner{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-items: center;
+	align-items: center;
+}
+@media(max-width: 600px){
+	.partners__inner{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+}
+}
+.partners-item{
+
+
+}
+
+.footer{
+	max-width: 100%;
+	background-color: gold;
+	border: 1px solid white;
+}
+
+.footer__inner{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 30px;
+}
+.footer-list{
+
+}
+

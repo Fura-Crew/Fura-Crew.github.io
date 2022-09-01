@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* nunito-regular - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: sans-serif;
+  font-weight: 400;
+  src: url("../fonts/nunito-v25-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/nunito-v25-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito-v25-latin-regular.woff2") format("woff2"), url("../fonts/nunito-v25-latin-regular.woff") format("woff"), url("../fonts/nunito-v25-latin-regular.ttf") format("truetype"), url("../fonts/nunito-v25-latin-regular.svg#Nunito") format("svg");
+  /* Legacy iOS */
+}
+/*шрифты*/
+/*---------*/
+/*цвета*/
+/*Темно-синий*/
+/*Светло-коричневый*/
+/*темно-серый*/
+/*светло-серый*/
+/*----------------------*/
+/*размеры шрифтов*/
+/*--------------------*/
+body {
+  background-color: #EDF0F5;
+}
+
+h2 {
+  font-weight: 900;
+  line-height: 34px;
+  color: #415167;
+  font-size: "30px";
+}
+
+section {
+  margin-top: 200px;
+  margin-bottom: 116px;
+}
+
+.header-aside {
+  padding-top: 230px;
+  background-color: #415167;
+  width: 100%;
+}
+.header-aside .aside-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.header-aside .aside-link {
+  color: gray;
+  text-decoration: none;
+}
+.header-aside .aside-link:hover {
+  color: white;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.header-aside .active-link:hover {
+  color: gray;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.header-aside .active-link {
+  color: white;
+}
+
+.photo-header {
+  margin-left: 20px;
+}
+
+.logo-header {
+  padding-top: 80px;
+  display: block;
+}
+
+.logo {
+  padding-left: -20px;
+}
+
+.header-heading {
+  margin-top: 392px;
+}
+
+.heading-logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 70px;
+  position: absolute;
+  left: 2px;
+}
+
+.personalized {
+  background-color: #C7A17A;
+  padding: 0px;
+  color: white;
+  border-radius: 3px;
+}
+
+.sub-heading {
+  color: #415167;
+  font-size: Nunito;
+  font-family: "Nunito";
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.heading-section {
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.left-dark-gray {
+  width: 20%;
+  height: 100%;
+  float: left;
+  z-index: -1;
+  position: relative;
+  background-color: #415167;
+}
+
+.build-coffe-cards {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 40px 25% 40px 25% 40px 25%;
+  grid-template-columns: repeat(4, 25%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.icon-coffe {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.build-card-text {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.heading-card {
+  font-size: 24px;
+  color: black;
+}
+
+.right-dark-gray {
+  width: 30%;
+  height: 100%;
+  float: right;
+  background-color: #415167;
+}
+
+.header .header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  width: 100%;
+}
+
+.personalized-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.slider-button {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background: url(../image/shape.svg) no-repeat center;
+  background-color: #C7A17A;
+  -ms-grid-row-align: end;
+      align-self: end;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+}
+
+.personalized-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.personalized-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.price {
+  color: #C7A17A;
+  font-size: 20px;
+}
+
+.heading-card {
+  font-size: 24px;
+}
+
+.description {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.personalized-link {
+  padding: 8px 17px;
+  background-color: #C7A17A;
+  color: white;
+  text-decoration: none;
+  border-radius: 19px;
+}
+
+.coffe-jar_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-jar {
+  z-index: 1;
+  position: relative;
+  left: 100px;
+  top: 30px;
+}
+
+.coffe-jar-text {
+  position: relative;
+  right: 100px;
+  padding-left: 15%;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.coffe-text-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.coffe {
+  display: block;
+  width: 40px;
+}
+
+.description-coffe-jar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.selling-link {
+  margin-top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coffe-sell-link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.combo-phin-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

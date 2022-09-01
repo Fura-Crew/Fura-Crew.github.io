@@ -1,0 +1,295 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: sans-serif;
+  font-weight: 400;
+  src: url('../fonts/nunito-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/nunito-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nunito-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nunito-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nunito-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nunito-v25-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+/*шрифты*/
+$Nunito-fonts: 'Nunito';
+$Montserrat-fonts: 'Montserrat';
+/*---------*/
+/*цвета*/
+$primary:'#415167'; /*Темно-синий*/
+$accent:'#C7A17A' ; /*Светло-коричневый*/
+$dark_gray:'#151D28';   /*темно-серый*/
+$light_gray:'#EDF0F5'; /*светло-серый*/
+/*----------------------*/
+
+/*размеры шрифтов*/
+$all_text:'16px';
+$heading_Card:'24px';
+$numbers:20px;
+$section_heading:'30px';
+$sub_heading:'20px';
+
+/*--------------------*/
+
+body{
+	background-color: #EDF0F5;
+}
+h2{
+	font-weight: 900;
+	line-height: 34px;
+	color:#415167;
+	font-size:$section_heading;
+}
+section{
+	margin-top:200px;
+	margin-bottom: 	116px;
+}
+.header{
+
+}
+.header-aside{
+	padding-top: 230px;
+	background-color:#415167;
+	width: 100%;
+
+	.aside-list{
+		list-style-type:none;
+		display: flex;	
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	.aside-link{
+		color: gray;
+		text-decoration: none;	
+	}
+	.aside-link:hover{
+		color: white;
+		transition-duration: 0.2s;
+		transition-delay: 0.2s;
+	}
+	.active-link:hover{
+		color: gray;
+		transition-delay:0.2s;
+		transition-delay:0.2s;
+	}
+	.active-link{
+		color: white;
+	}
+}
+.photo-header{
+	margin-left: 	20px;
+}
+.logo-header{
+	padding-top: 	80px;
+	display: block;	
+}
+.logo{
+	padding-left:-20px;
+}
+.header-heading{
+	margin-top: 	392px;
+}
+.heading-logo{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 70px;		
+	position: absolute;	
+	left: 2px;
+}
+.personalized{
+	background-color:#C7A17A;
+	padding: 0px;
+	color: white;
+	border-radius: 	3px;
+}
+.heading-logo{
+
+}
+.sub-heading{
+	color:#415167;
+	font-size:Nunito;
+	font-family: $Nunito-fonts;
+	font-weight: 600;
+	line-height: 24px;
+}
+.heading-section{
+	text-align: center;
+	position: relative;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.left-dark-gray{
+	width: 20%;
+	height: 100%;
+	float: left;
+	z-index: -1;
+	position: relative;
+	background-color: #415167;
+}
+.build-coffe-cards{
+	text-align: center;	
+	display: grid;
+	grid-template-columns:repeat(4,25%);	
+	justify-content: center;
+	gap:40px;	
+
+}
+.build-card{
+
+}
+.icon-coffe{
+	justify-content: center;	
+}
+.build-card-text{
+	justify-self: center;	
+		
+}
+.heading-card{
+	font-size: 24px;
+	color: black;
+
+}
+.right-dark-gray{
+	width: 30%;
+	height: 100%;
+	float: right;
+	background-color: #415167;
+}
+.header
+.header_inner{
+	display: flex;
+}
+
+section{
+	width: 100%;
+}
+.personalized-cards{
+	display: grid;	
+	grid-template-columns: repeat(2,1fr );
+	gap: 30px;
+}
+.slider-button-adaptive{
+	display: none;
+	justify-self: end;	
+	background: url(../image/shape.svg) no-repeat	center;
+	background-color: #C7A17A;
+	align-self: end;	
+	border-radius:30px;
+	width: 50px;
+	height: 50px;
+	grid-column-start:2;
+	grid-column-end: 	3;
+}
+.slider-button{
+	justify-self: end;	
+	background: url(../image/shape.svg) no-repeat	center;
+	background-color: #C7A17A;
+	align-self: end;	
+	border-radius:30px;
+	width: 50px;
+	height: 50px;
+	grid-column-start:2;
+	grid-column-end: 	3;
+}
+.personalized-card{
+	display: flex;
+	background-color: 	white;
+
+}
+.personalized-photo{}
+.personalized-text{
+		align-self: 	center;
+}
+.price{
+	color:#C7A17A;
+	font-size: 20px;	
+}
+.heading-card{
+	font-size: 	24px;
+}
+.heading-card{
+}
+.description{
+	padding-bottom: 	10px;
+	padding-top: 	20px;
+	font-size: 	16px;
+}
+.personalized-link{
+	padding: 8px 17px;
+	background-color: 	#C7A17A;
+	color: white;
+	text-decoration: none;	
+	border-radius: 19px;
+}
+.coffe-jar_inner{
+	display: flex;	
+}
+
+.image-jar{
+	z-index: 	1;
+	position:relative;
+	left: 100px;
+	top: 30px;
+}
+.coffe-jar-text{
+	position: relative;	
+	right: 100px;
+	padding-left:15%;
+	padding-top:20px;
+	background-color:white;
+
+}
+.coffe-text-card{
+	display: grid;
+	grid-template-columns:repeat(2,1fr );
+}
+.coffe{
+	display: block;	
+	width: 40px;
+}
+.coffe-title
+.coffe-description{
+
+}
+.description-coffe-jar{
+	display: flex;	
+	gap: 30px;
+
+}
+.selling-link{
+	margin-top: 	30%;
+	display: flex;
+	justify-content: space-between	;		
+}
+
+.coffe-sell-link{
+	align-self: center;	
+}
+
+.combo-phin-cards{
+	display: grid;	
+	grid-template-columns:repeat(1, 1fr);
+	gap: 60px;
+}
+.link-combo-pin{
+	display: flex;	
+
+}

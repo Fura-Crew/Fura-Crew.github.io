@@ -52,7 +52,10 @@
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-	}	
+	}
+	.selling-link{
+		display:block;
+	}
 	.coffe-jar-text{
 		width: 50%;
 /* 		margin-left:40%; */

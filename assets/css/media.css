@@ -1,0 +1,99 @@
+@media(max-width: 1000px){
+	body{
+
+		}
+	img{
+		max-width: 100%;
+	}
+	.header{
+		display: none;
+	}	
+	.container{
+	}	
+	.build-coffe-cards{
+		text-align: center;	
+		display: grid;
+		grid-template-columns:repeat(1,25%);	
+		justify-content: center;
+		gap:40px;
+	}
+	.adaptive-text{
+		display: none;
+	}
+	.personalized-cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:center;
+		gap: 30px;
+	}
+
+	.personalized-card{
+		padding: 20px;
+		text-align: center;
+		width: 70%;
+		justify-self:center;
+		display: block;
+	}
+	.slider-button{
+		display: none;
+	}	
+	.coffe-text-card{
+		display: flex;
+		flex-direction: column;
+	}
+	/*
+	}РЕАЛИЗОВАТЬ КНОПКУ ДЛЯ СЛАЙДЕРОВ
+	.slider-button-adaptive{
+	}
+	/**/
+	.coffe-jar{
+	}
+	.coffe-jar__inner{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.coffe-jar__text{
+			align-self: center;
+			width: 60%;
+			margin-left: 40%;
+
+			padding-left:30px;
+			padding-right: 30px;
+			padding-top:50px ;
+			padding-bottom:70px;
+		}	
+	
+	.coffe-jar-text-description__coffe-settings{
+		gap: 20%;
+	}
+	.sell-links{
+		display: flex;
+		flex-direction: column;
+	}
+	.combo-phin-cards{
+		display: block;
+	}
+	.combo-phin-card{
+		text-align: center;
+	}
+	.link-combo-pin{
+		display:block;
+	}
+
+}
+
+
+@media(max-width: 300px){
+	.personalized-card{
+		width: 100%;
+		justify-self:start;
+	}
+	.coffe-jar__text{
+			align-self: center;
+			width: 80%;
+			margin-left: 130%;
+		}
+}

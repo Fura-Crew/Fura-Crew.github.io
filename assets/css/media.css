@@ -47,18 +47,17 @@
 	}
 	/**/
 	.coffe-jar{
-		width: 100%;
-		margin: 0 auto;
 	}
 	.coffe-jar__inner{
 		width: 100%;
-		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}	
 	.coffe-jar__text{
+		align-self: center;
 		width: 50%;
-		margin-left: 40%;
+		margin-left: 60%;
 	}
 	.coffe-jar-text-description__coffe-settings{
 		gap: 20%;

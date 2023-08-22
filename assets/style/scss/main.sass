@@ -1,0 +1,98 @@
+@import 'font.sass'
+
+body
+  font-family: RobotoLight
+  .container
+    max-width:80%
+    margin:0 auto
+
+  .header-nav
+    li
+      list-style-type: none
+    &__list
+      display: flex
+      justify-content: space-between 
+
+      a
+        text-decoration: none
+  .header-hero
+    display: flex
+    align-items: flex-end
+    height:400px
+    .main-heading
+      float:left
+      width:40%
+
+  main
+    section
+      margin-top: 10em
+      margin-bottom: 10em     
+    
+    .gallery-block
+      display: grid
+      grid-template-columns:40% 40%
+      justify-content: center
+      gap:23px
+    .gallery-block-column
+      display: flex
+      flex-direction: column
+      gap:20px
+      .gallery-card-description
+        margin:0
+        padding:24px
+        display: flex
+        flex-direction: column
+        gap:20px
+        box-shadow: 1px 5px 10px black
+
+    
+    .gallery
+      .gallery-block
+        display: grid
+        grid-template-columns:40% 40%
+        &__card
+          font-size: 20px
+
+          &-description
+            display: flex
+            gap:5px
+            flex-direction: column
+            padding:20px
+        // .gallery-block__card__max-height
+
+        // .gallery-block__card__min-height
+
+    .services
+      .services-card-landing
+        position: relative
+        background: url("../../image/services-backgound.jpg") center / cover no-repeat
+        padding: 200px
+        color: white  
+        
+        &__text
+          position: absolute
+          left:60%
+          top:50%
+          width:30%
+      .services-card__two-block
+        display: flex 
+        .services-card__twin-block
+          background-color: black
+          color: white
+          padding:200px 50px
+        .services-card__twin-block__photo
+          background: url("../../image/services.jpg") center / cover no-repeat
+
+    .main-project
+      .heading-section
+        //Возможно общий стиль для заголовках в heading
+        width:80%
+        margin:0 auto
+        text-align: center
+
+        &__main-text
+          margin-bottom: 15px
+          display: block
+
+        &__description-text
+          display: block  

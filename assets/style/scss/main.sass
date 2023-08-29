@@ -1,0 +1,103 @@
+@import "variables/_variables.sass"
+
+@import "basic/_base.sass"
+@import "typography/_typography.sass"
+@import "components/_skills-icon.sass"
+@import "layouts/_header.sass"
+@import "utilites/_heading-center.sass"
+main
+  .about-me
+    background: linear-gradient(rgba(black,0.9),black 50%),url("../../image/Coding-Games.jpg") center / cover no-repeat
+    background-attachment: fixed
+    color: white
+    padding:200px 0
+    &__inner
+      text-align: center
+
+      .about-me-text
+        font-size: 1.2rem
+        &__link
+          display: inline-block
+          text-decoration: none
+          color: black
+          background-color: white
+          padding:20px
+          border:1px solid white
+          border-radius: 30px
+          box-shadow: white 0px 2px 30px
+  .my-skills
+    background-color: black
+    color: white
+    padding:100px
+    letter-spacing: 2pxf
+    &-block 
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+      // align-items: start
+      justify-content: center
+      
+      gap:20px
+      &-card
+        display: flex
+        flex-direction: column
+        align-content: center
+        background-color: rgba(153, 146, 146, 0.4)
+        padding:40px
+        border-radius: 20px 
+        &-icon
+          display: flex
+          flex-direction: column
+          align-items: center
+          gap:20px
+          &__img
+            width:30%
+        &-text 
+          line-height: 20px      
+        ul 
+          display: flex
+          flex-wrap: wrap
+          gap:15px
+          list-style-type: none
+
+          li
+          
+            line-height: 10px
+        
+  .services
+    .services-card-landing
+      position: relative
+      background: url("../../image/services-backgound.jpg") center / cover no-repeat
+      padding: 200px
+      color: white  
+      
+      &__text
+        position: absolute
+        left:60%
+        top:50%
+        width:30%
+    .services-card__two-block
+      display: flex 
+      .services-card__twin-block
+        background-color: black
+        color: white
+        padding:200px 50px
+      .services-card__twin-block__photo
+        background: url("../../image/services.jpg") center / cover no-repeat  
+  .main-project
+    &-block 
+      display: flex
+      justify-content: center
+      text-align: center
+      align-items: center
+      flex-wrap: wrap
+      gap:30px
+
+      .main-project-card
+        text-align: center
+        &__logo a
+          color: white
+        &__description-project
+          line-height: 2px
+          
+        
+        

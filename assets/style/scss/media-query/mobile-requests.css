@@ -1,4 +1,7 @@
 @media (max-width: 1000px){
+  .container{
+    width:100%
+  }
   .header-hero .main-heading-icons{
     display: grid;
     grid-template-columns: repeat(2,1fr);

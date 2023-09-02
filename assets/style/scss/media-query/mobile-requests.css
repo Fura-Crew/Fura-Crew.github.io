@@ -1,0 +1,24 @@
+@media (max-width: 1000px){
+  .header-hero .main-heading-icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0.1rem
+  }
+  .header-hero .main-heading-icons .main-heading-icon{
+  }
+  .my-skills .my-skills-block{
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  .services .services-card-landing .services-card-landing__text{
+    position:static;
+    width:100%;
+    text-align: center;
+  }
+
+  .services-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}

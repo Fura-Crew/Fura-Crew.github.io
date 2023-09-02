@@ -1,0 +1,35 @@
+
+// Общий шрифт
+@font-face 
+	font-family: RobotoLight
+	src: url(../../fonts/Roboto-Light.ttf)
+
+// strong text and heading
+@font-face 
+	font-family: RobotoBold
+	src: url(../../fonts/Roboto-bold.ttf)
+
+@font-face 
+	font-family: ProjectCardFont
+	src: url(../../fonts/VT323-Regular.ttf)
+
+body
+	font-family: $main-font
+	font-size: $font-size
+
+	.heading-section
+	//Возможно общий стиль для заголовках в heading
+		width:80%
+		margin:0 auto
+		text-align: center
+
+		&__main-text
+		margin-bottom: 15px
+		display: block
+
+		&__description-text
+		display: block 
+	.main-project-card
+		&__logo
+			font-size: 3rem
+			font-family: ProjectCardFont

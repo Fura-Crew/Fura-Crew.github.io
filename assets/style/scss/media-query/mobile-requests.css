@@ -1,12 +1,4 @@
 @media (max-width: 1000px){
-  body{
-    font-size: 100px;
-    line-height: 2rem;
-    font-weight: normal;
-    background-color: black;
-    color: white;
-  }
-
   .header-hero .main-heading-icons{
     display: grid;
     grid-template-columns: repeat(2,1fr);

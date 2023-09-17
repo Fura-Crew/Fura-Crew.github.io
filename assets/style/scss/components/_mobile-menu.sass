@@ -1,0 +1,70 @@
+.mobile-menu
+  display: flex
+  justify-content: end
+  font-size: 2.4rem
+  font-weight: bold
+  &__button
+    z-index: 2
+    order: 1
+    cursor: pointer
+    width: 10%
+    height: .5rem
+    background-color: white
+    position: fixed
+    &::before , &::after
+      position: absolute
+      font-size: 10rem
+      display: block
+      content:""
+      background-color: white
+      width:100%
+      height:.5rem
+
+    &::after
+      top:.8rem
+
+    &::before
+      top:-.8rem
+
+  &__button__close
+    width: 7%
+    height: .2rem
+    top:4rem
+    background-color: rgba(0, 0, 0,0 )
+  
+    &::after
+      transform: rotate(-45deg)
+      top:0
+    &::before
+      top:0
+      transform: rotate(45deg)          
+  &-nav
+    z-index: 1
+    display: none
+    position: fixed
+    text-align: center
+    background-color: rgba(0, 0, 0, 0.9)
+    height:100vh
+    top:0
+    left:0
+    right:0
+  .mobile-menu-nav-list
+    list-style-type: none
+
+  .open-list
+    order:-1
+    display: flex
+    justify-content: center
+    align-items: center
+  .mobile-menu-nav-list
+    display: flex
+    flex-direction: column
+    gap: 2rem  
+
+    .header-nav__item__link
+      color: white
+      text-decoration: none
+    
+// Анимация
+  .menu-button__animation
+    

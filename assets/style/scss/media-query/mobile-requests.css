@@ -1,0 +1,44 @@
+@media (max-width: 1000px){
+  header{
+    font-size: 2rem;
+  }
+  header .container .mobile-menu{
+    display: flex;
+    justify-content: end;
+  }
+  header .container .header-nav{
+    display: none;
+  }
+    
+  .header-hero .main-heading-icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0.1rem
+  }
+  .about-me .about-me__inner{
+    font-size: 2rem;
+  }
+
+  .my-skills .my-skills-block{
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  .my-skills-block .my-skills-block-card{
+    font-size: 2rem;
+  }
+  .services .services-card-landing .services-card-landing__text{
+    position:static;
+    width:100%;
+    text-align: center;
+  }
+
+  .services-cards{
+    font-size: 2rem;
+  }
+  .services-card__two-blocks{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+

@@ -1,0 +1,72 @@
+@import "../../../style/main.sass"
+@import "../../../style/typography/_typography.sass"
+@import "../../../style/components/_sidebar.sass"
+@import "../../../style/components/_description-section.sass"
+@import "../../../style/components/_filter-menu.sass"
+@import "../../../style/components/_link-background.sass"
+@import "../../../style/components/_link-non-backround.sass"
+@import "../../../style/components/_contacts.sass"
+@import "../../../style/components/_footer.sass"
+section
+  margin: 0
+
+.food-heading
+  margin-top: 20rem
+  .container_food-heading
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+  &__image
+    width: 41.6rem
+    &-mini
+      display: flex
+      justify-content: space-between
+      img
+        display: inline-block
+  &__description
+    width: 28rem
+    display: flex
+    flex-direction: column
+    gap: 7rem
+    font-size: 1.6rem
+    font-style: normal
+    font-weight: 700
+    line-height: 140%
+    &__mount
+      display: flex
+      flex-direction: column
+      gap:3rem
+      &__food
+        // 
+        &__counter
+          display: flex
+          border: 1px solid rgba(3,3,3,0.3)
+          display: inline-block
+          padding: 1.5rem 2.5rem
+          margin-right: 3rem
+          font-size: 2rem
+          text-align: center
+          
+          &__move
+            display: block
+            
+    &__bonus
+      &-menu
+        &__description
+          &__block
+            display: flex
+            align-items: center
+            gap:10rem
+            &:not(last-child)
+              margin-bottom: 2rem
+
+.price
+  font-size: 2rem
+  font-style: normal
+  font-weight: 700
+  line-height: 2.8rem
+.weight
+  opacity: 0.6
+  color: $text-color
+  font-size: 1.6rem
+  font-style: normal
+  font-weight: 700

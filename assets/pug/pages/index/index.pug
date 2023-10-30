@@ -1,0 +1,67 @@
+head
+  include ../../common/templates/_nameTitle.pug
+  -nameTitle = 'food exxe'
+  include ../../common/templates/_head.pug
+  title #{nameTitle}
+body
+  include ../../common/components/header/header.pug
+  main
+    section.about-restaurant 
+      .container.about-restaurant__container
+        h3.section-description
+          |О ресторане 
+          span.section-description__elem 
+        .section-block.about-restaurant__section-text
+          h2.section-block__name
+            div 
+              |Food
+            div
+              |Exxe
+            div
+              |Relo
+          .section-block__text
+            include ../../common/templates/texts/indexTexts/AboutRestoraunt.pug
+
+    section.menu-restaurant
+      .container.menu-restaurant__container
+        h3.section-description
+          |Меню 
+          span.section-description__elem 
+        .section-block.menu-restaurant__section-text
+          h2.section-block__name
+            |Меню
+          .section-block__text
+            include ../../common/templates/texts/indexTexts/AboutMenu.pug
+        .menu-cards
+          .menu-cards-block.menu-cards-block_main-menu
+            img(src="assets/image/menu-photo1.jpg", alt="человек с меню в руках")
+            h3.section-description.section-description_menu
+              |Основное меню
+              span.section-description__elem 
+          .menu-cards-block.menu-cards-block_map-menu
+            img(src="assets/image/menu-photo-2.jpg", alt="человек с меню в руках")
+            h3.section-description.section-description_menu
+              |Барная карта 
+              span.section-description__elem
+
+    section.deliver-restaurant#deliver
+      .container.deliver-restaurant__container
+        h3.section-description
+          |Доставка 
+          span.section-description__elem 
+        .section-block.deliver-restaurant__section-text
+          h2.section-block__name
+            |Служба доставки
+          .section-block__text
+            include ../../common/templates/texts/indexTexts/AboutDeliver.pug
+              .deliver-cards
+                .deliver-cards-block
+                  a(href="#" class='link-background') Подробнее 
+                .deliver-cards-block
+                  a(href="#" class='link-non-background') Условия доставки 
+    
+    script(src="assets/scripts/ReserveTableOpen.js") 
+    .container
+      include ../../common/components/contacts/contacts.pug
+  include ../../common/components/footer/footer.pug
+  include ../../common/components/pop-up-windows/reserve-table.pug
